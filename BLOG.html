@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG - IT111 Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #FFCCEA no-repeat center center;
+            background-size: cover;
+            background-blend-mode: overlay;
+            margin: 0;
+            padding: 0;
+            color: #FFCCEA;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #0B8494;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 0 10px #00ffff;
+        }
+        .logo {
+            height: 50px;
+            width: 50px;
+            box-shadow: 0 0 5px #00ffff;
+            border-radius: 50%;
+            transition: box-shadow 0.3s ease;
+        }
+        .logo:hover {
+            box-shadow: 0 0 10px #ff00ff;
+        }
+        nav {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1em;
+        }
+        nav a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 20px #ff00ff;
+        }
+        .content {
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            background: #181C14;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5em;
+            text-align: center;
+        }
+        .highlights ul {
+            max-width: 60%;
+            margin: 0 auto;
+            color: #b3b3b3;
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        .highlights li {
+            margin: 1em 0;
+            color: #219B9D;
+        }
+        .center-image {
+            display: block;
+            margin: 1em auto;
+            max-width: 100%;
+            height: auto;
+        }
+        .aligned-image {
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 0 10px #00ffff;
+            transition: transform 0.3s ease;
+        }
+        .aligned-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #ff00ff;
+        }
+       footer {
+			background-color: #FFAAAA;
+			text-align: center;
+			padding: 0.5em; /* Reduced padding */
+			position: fixed;
+			width: 100%;
+			bottom: 0;
+			box-shadow: 0 0 10px #00ffff;
+			color: #643843;
+			font-size: 0.9em; /* Slightly smaller font size */
+		}
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="home page.html"><img src="blog logo.png" alt="Blog Logo" class="logo"></a>
+        <nav>
+            <a href="home page.html">Home</a>
+            <a href="BLOG.html">IT111 Blog</a>
+            <a href="flex page.html">Flex Page</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>INTRODUCTION TO COMPUTING LESSONS: OUTPUT</h1>
+        <div class="highlights">
+            <ul>
+                <li><strong>1. Computing's Impact on Industries</strong></li>
+                <li>History of computing and its eras.</li>
+                <img src="vacume tube era.png" alt="Vacuum Tube Era" class="center-image">
+                <li><strong>2. Information Processing Cycle</strong></li>
+                <li>Sequence of Input, Processing, and Output.</li>
+                <li><strong>3. Computer Systems</strong></li>
+                <li>Components of computer systems.</li>
+                <li><strong>4. Concepts of Computer Security</strong></li>
+                <li>Data security, information, cybercrimes, and cybercriminals.</li>
+                <div style="display: flex; justify-content: center; gap: 1em; margin: 1em 0;">
+                    <img src="cyber security.png" alt="Cyber Security" class="aligned-image">
+                    <img src="cyber security2.png" alt="Cyber Security 2" class="aligned-image">
+                </div>
+                <li><strong>5. HTML and CSS</strong></li>
+                <div style="display: flex; justify-content: center; gap: 1em; margin: 1em 0;">
+                    <img src="triosquad2.png" alt="HTML CSS Project 1" class="aligned-image" style="max-width: 500px;">
+                    <img src="triosquad.png" alt="HTML CSS Project 2" class="aligned-image" style="max-width: 500px;">
+                </div>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Rexyl Brian A. Salino</p>
+    </footer>
+</body>
+</html>

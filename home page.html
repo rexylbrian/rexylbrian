@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page - Rexyl Brian A. Salino</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #FCF596;
+            background-size: cover;
+            background-blend-mode: overlay;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #A8CD89;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 0 10px #00ffff;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .logo {
+            height: 50px;
+            width: 50px;
+            box-shadow: 0 0 5px #00ffff;
+            border-radius: 50%;
+        }
+        .logo:hover {
+            box-shadow: 0 0 10px #ff00ff;
+        }
+        nav {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #00ffff;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 20px #ff00ff;
+        }
+        .content {
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            animation: fadeInUp 2s forwards;
+            text-align: center;
+        }
+        .info {
+            max-width: 80%;
+        }
+        .info h1 {
+            font-size: 3em;
+            background: #EB8317;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5em;
+        }
+        .info h3 {
+            font-size: 1.5em;
+            color: #FF77B7;
+        }
+        .info p, .info ul li {
+            font-size: 1em;
+            color: #E7CCCC;
+        }
+        .profile {
+            margin-top: 20px;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #00ffff;
+        }
+        footer {
+            background-color: #FFAAAA;
+            text-align: center;
+            padding: 0.5em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 0 10px #00ffff;
+            color: #643843;
+            font-size: 0.9em;
+        }
+        .fblogo, .iglogo {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+        a {
+            color: #00ffff;
+        }
+        a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 20px #ff00ff;
+        }
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(100px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(10px);
+            }
+        }
+        @media (min-width: 768px) {
+            .content {
+                flex-direction: row;
+                text-align: center;
+            }
+            .info {
+                max-width: 60%;
+            }
+            .info h1 {
+                font-size: 3.5em;
+            }
+            .info h3 {
+                font-size: 2em;
+            }
+            .info p, .info ul li {
+                font-size: 1.2em;
+            }
+            .profile {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="home page.html">
+                <img src="467097456_1206700783733559_697890889873424145_n.jpg" alt="Logo" class="logo">
+            </a>
+        </div>
+        <nav>
+            <a href="home page.html">Home</a>
+            <a href="BLOG.html">IT111 Blog</a>
+            <a href="flex page.html">Flex Page</a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="info">
+            <h1>Hello, I'm Rexyl Brian A. Salino</h1>
+            <p>A BSEMC-DAT student at Bukidnon State University.</p>
+            <h3>Introduction</h3>
+            <ul>
+                <li>Hobbies: frisbee, online games</li>
+                <li>Skills: Web Development, Animation, Basic Programming</li>
+            </ul>
+            <h3>Social Media</h3>
+            <a href="https://www.facebook.com/rexylbrian.ancheta.7" target="_blank">
+                <img src="Screenshot 2024-11-18 214709.png" alt="Visit my Facebook profile" class="fblogo">
+            </a>
+            <a href="https://www.instagram.com/rexylbrian/" target="_blank">
+                <img src="Screenshot 2024-11-18 215340.png" alt="Visit my Instagram profile" class="iglogo">
+            </a>
+        </div>
+        <div>
+            <a href="https://youtube.com/shorts/_h21CIrCp-s" target="_blank">
+                <img src="profile home.png" alt="Profile Picture" class="profile">
+            </a>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Rexyl Brian A. Salino</p>
+    </footer>
+</body>
+</html>

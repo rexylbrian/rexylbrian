@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Page - IT111</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #8E3E63;
+            background-size: cover;
+            background-blend-mode: overlay;
+            margin: 0;
+            padding: 0;
+            color: #00ffff;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #C6E7FF;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 0 10px #00ffff;
+        }
+        .logo {
+            height: 50px;
+            width: 50px;
+            box-shadow: 0 0 5px #00ffff;
+            border-radius: 50%;
+            transition: box-shadow 0.3s ease;
+        }
+        .logo:hover {
+            box-shadow: 0 0 10px #ff00ff;
+        }
+        nav {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1em;
+        }
+        nav a {
+            color: #399918;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #1A4D2E;
+            text-shadow: 0 0 20px #ff00ff;
+        }
+        .content {
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #00ffff, #ff00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5em;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #b3b3b3;
+            margin-bottom: 1em;
+        }
+        .flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .flex ul {
+            max-width: 90%;
+            list-style: none;
+            padding: 0;
+        }
+        .media img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 0.5em;
+            border-radius: 10%;
+            box-shadow: 0 0 5px #00ffff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .media img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 20px #ff00ff;
+        }
+        .media .animate {
+            animation: moveAndBounce 2s infinite alternate;
+        }
+        footer {
+            background-color: #FFAAAA;
+            text-align: center;
+            padding: 0.5em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 0 10px #00ffff;
+            color: #643843;
+            font-size: 0.9em;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes moveAndBounce {
+            0% {
+                transform: translateY(0) scale(1);
+            }
+            100% {
+                transform: translateY(-20px) scale(1.1);
+            }
+        }
+        @media (min-width: 768px) {
+            .flex {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="home page.html"><img src="flex page.png" alt="Logo" class="logo"></a>
+        <nav>
+            <a href="home page.html">Home</a>
+            <a href="BLOG.html">IT111 Blog</a>
+            <a href="flex page.html">Flex Page</a>
+        </nav>
+    </header>
+    <div class="content">
+        <h1>FLEX PAGE:</h1>
+        <div class="flex">
+            <ul>
+                <li>
+                    <h3>My biggest flex in life is presenting our research at the Research Congress.</h3>
+                    <div class="media">
+                        <img src="a4b003a8-56bc-44bd-add4-a9f6821d5792.jpg" alt="Research Congress 1">
+                        <img src="b7116656-8285-4187-a4cf-9b15c79b0cf7.jpg" alt="Research Congress 2">
+                    </div>
+                </li>
+                <li>
+                    <h3>Having great people that I call friends.</h3>
+                    <div class="media">
+                        <img src="ogems2.jpg" alt="Friends 1">
+                        <img src="ogems.jpg" alt="Friends 2">
+                    </div>
+                </li>
+                <li>
+                    <h3>Competing in tournaments against different teams in Frisbee.</h3>
+                    <div class="media">
+                        <img src="nayagac.jpg" alt="Frisbee Tournament 1">
+                        <img src="pangantukan.jpg" alt="Frisbee Tournament 2">
+                        <img src="camp juan.jpg" alt="Frisbee Tournament 3">
+                    </div>
+					
+						<div>
+							<h3>I can also do basic animation.</h3>
+						<iframe width="560" height="315" 
+							src="https://www.youtube.com/embed/4Y0GdnezZb0" 
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+								allowfullscreen>
+						</iframe>
+						<iframe width="560" height="315" 
+							src="https://www.youtube.com/embed/8WYJ8mU35No" 
+							frameborder="0" 
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+							allowfullscreen>
+						</iframe>
+						</div>
+
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Rexyl Brian A. Salino</p>
+    </footer>
+</body>
+</html>
